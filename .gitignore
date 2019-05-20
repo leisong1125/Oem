@@ -1,0 +1,13 @@
+Pods*
+Jimmy.xcodeproj/xcuserdata/
+Jimmy.xcworkspace/xcuserdata/
+.DS_Store
+build/
+Jimmy.xcodeproj/contents.xcworkspacedata/
+Jimmy.xcworkspace/xcuserdata/Jimmy.xccheckout
+*.xcworkspace
+.idea/
+*.swp
+*.lock
+
+R.generated.swift

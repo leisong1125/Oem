@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jimmy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Data Source-->
+        <scene sceneID="kaQ-1r-rCl">
+            <objects>
+                <viewController storyboardIdentifier="J_HomeVC" id="4am-bg-irg" customClass="J_HomeVC" customModule="Jimmy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="79s-ry-bHP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0C-o7-4fY" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="20" width="375" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="2TP-TU-Ym8"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="4am-bg-irg" id="Mdb-Vd-3oA"/>
+                                    <outlet property="delegate" destination="4am-bg-irg" id="Kyd-nB-7D0"/>
+                                </connections>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O7s-fy-4bh">
+                                <rect key="frame" x="0.0" y="320" width="375" height="347"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="jAe-8v-krc">
+                                    <rect key="frame" x="0.0" y="72" width="375" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeCell" id="dJS-de-vHk">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dJS-de-vHk" id="cf4-XD-8xt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4am-bg-irg" id="DFU-wo-cEO"/>
+                                    <outlet property="delegate" destination="4am-bg-irg" id="oPt-BQ-8FP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zw5-Rb-H5z" firstAttribute="bottom" secondItem="O7s-fy-4bh" secondAttribute="bottom" id="PS8-wB-LfH"/>
+                            <constraint firstItem="I0C-o7-4fY" firstAttribute="leading" secondItem="zw5-Rb-H5z" secondAttribute="leading" id="Y7E-DU-O8V"/>
+                            <constraint firstItem="zw5-Rb-H5z" firstAttribute="trailing" secondItem="I0C-o7-4fY" secondAttribute="trailing" id="bnn-bQ-PBc"/>
+                            <constraint firstItem="O7s-fy-4bh" firstAttribute="leading" secondItem="zw5-Rb-H5z" secondAttribute="leading" id="buY-7V-vG8"/>
+                            <constraint firstItem="I0C-o7-4fY" firstAttribute="top" secondItem="zw5-Rb-H5z" secondAttribute="top" id="d1P-Zf-f2O"/>
+                            <constraint firstItem="O7s-fy-4bh" firstAttribute="top" secondItem="I0C-o7-4fY" secondAttribute="bottom" id="fOh-2a-9sl"/>
+                            <constraint firstItem="zw5-Rb-H5z" firstAttribute="trailing" secondItem="O7s-fy-4bh" secondAttribute="trailing" id="zpa-8N-mEQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zw5-Rb-H5z"/>
+                    </view>
+                    <connections>
+                        <outlet property="calendar" destination="I0C-o7-4fY" id="kIb-uw-mqI"/>
+                        <outlet property="calendarHeightLayout" destination="2TP-TU-Ym8" id="7hh-Kr-OLc"/>
+                        <outlet property="tableView" destination="O7s-fy-4bh" id="byD-qQ-hIQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQU-pI-Lye" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1327" y="27"/>
+        </scene>
+    </scenes>
+</document>
