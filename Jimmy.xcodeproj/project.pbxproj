@@ -33,6 +33,7 @@
 		ED990D8C2292C7F500DE6DAE /* J_HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990D8B2292C7F500DE6DAE /* J_HomeVC.swift */; };
 		ED990D8E2292CAEA00DE6DAE /* J_CenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990D8D2292CAEA00DE6DAE /* J_CenterVC.swift */; };
 		ED990D902292CAF800DE6DAE /* J_MineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990D8F2292CAF800DE6DAE /* J_MineVC.swift */; };
+		ED990D922292DE9300DE6DAE /* J_LunarFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990D912292DE9300DE6DAE /* J_LunarFormatter.swift */; };
 		F1B38F159838503E7C706BD0 /* Pods_Jimmy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC474726E4E4C56330B78B3 /* Pods_Jimmy.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		ED990D8B2292C7F500DE6DAE /* J_HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_HomeVC.swift; sourceTree = "<group>"; };
 		ED990D8D2292CAEA00DE6DAE /* J_CenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_CenterVC.swift; sourceTree = "<group>"; };
 		ED990D8F2292CAF800DE6DAE /* J_MineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_MineVC.swift; sourceTree = "<group>"; };
+		ED990D912292DE9300DE6DAE /* J_LunarFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_LunarFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				ED990D8B2292C7F500DE6DAE /* J_HomeVC.swift */,
+				ED990D912292DE9300DE6DAE /* J_LunarFormatter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED990D922292DE9300DE6DAE /* J_LunarFormatter.swift in Sources */,
 				ED990D652292C2E900DE6DAE /* J_HUD.swift in Sources */,
 				ED990D802292C4A800DE6DAE /* UIWindow+Ex.swift in Sources */,
 				ED990D7D2292C4A800DE6DAE /* UIViewController+Ex.swift in Sources */,
