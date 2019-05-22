@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class J_BaseVC: UIViewController {
 
     fileprivate var backImage: UIImage?
+    
+    let disposeBag = DisposeBag()
     
     
     override func rt_customBackItem(withTarget target: Any!, action: Selector!) -> UIBarButtonItem! {

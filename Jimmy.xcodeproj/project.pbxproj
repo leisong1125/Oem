@@ -34,6 +34,12 @@
 		ED990D8E2292CAEA00DE6DAE /* J_CenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990D8D2292CAEA00DE6DAE /* J_CenterVC.swift */; };
 		ED990D902292CAF800DE6DAE /* J_MineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990D8F2292CAF800DE6DAE /* J_MineVC.swift */; };
 		ED990D922292DE9300DE6DAE /* J_LunarFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990D912292DE9300DE6DAE /* J_LunarFormatter.swift */; };
+		ED990D942293C7EF00DE6DAE /* J_CenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990D932293C7EF00DE6DAE /* J_CenterTableViewCell.swift */; };
+		ED990D962293E5A400DE6DAE /* J_BaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED990D952293E5A400DE6DAE /* J_BaseView.xib */; };
+		ED990D982293E5BF00DE6DAE /* J_PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990D972293E5BF00DE6DAE /* J_PickerView.swift */; };
+		ED990DA222951B7500DE6DAE /* J_Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DA122951B7500DE6DAE /* J_Picker.swift */; };
+		ED990DA422952B6E00DE6DAE /* J_PlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DA322952B6E00DE6DAE /* J_PlanModel.swift */; };
+		ED990DA9229559AD00DE6DAE /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DA8229559AD00DE6DAE /* Date+Ex.swift */; };
 		F1B38F159838503E7C706BD0 /* Pods_Jimmy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC474726E4E4C56330B78B3 /* Pods_Jimmy.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +77,12 @@
 		ED990D8D2292CAEA00DE6DAE /* J_CenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_CenterVC.swift; sourceTree = "<group>"; };
 		ED990D8F2292CAF800DE6DAE /* J_MineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_MineVC.swift; sourceTree = "<group>"; };
 		ED990D912292DE9300DE6DAE /* J_LunarFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_LunarFormatter.swift; sourceTree = "<group>"; };
+		ED990D932293C7EF00DE6DAE /* J_CenterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_CenterTableViewCell.swift; sourceTree = "<group>"; };
+		ED990D952293E5A400DE6DAE /* J_BaseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = J_BaseView.xib; sourceTree = "<group>"; };
+		ED990D972293E5BF00DE6DAE /* J_PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_PickerView.swift; sourceTree = "<group>"; };
+		ED990DA122951B7500DE6DAE /* J_Picker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = J_Picker.swift; sourceTree = "<group>"; };
+		ED990DA322952B6E00DE6DAE /* J_PlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_PlanModel.swift; sourceTree = "<group>"; };
+		ED990DA8229559AD00DE6DAE /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +210,12 @@
 		ED990D712292C39800DE6DAE /* Center */ = {
 			isa = PBXGroup;
 			children = (
+				ED990DA122951B7500DE6DAE /* J_Picker.swift */,
 				ED990D8D2292CAEA00DE6DAE /* J_CenterVC.swift */,
+				ED990D932293C7EF00DE6DAE /* J_CenterTableViewCell.swift */,
+				ED990D972293E5BF00DE6DAE /* J_PickerView.swift */,
+				ED990D952293E5A400DE6DAE /* J_BaseView.xib */,
+				ED990DA322952B6E00DE6DAE /* J_PlanModel.swift */,
 			);
 			path = Center;
 			sourceTree = "<group>";
@@ -230,6 +247,7 @@
 				ED990D7B2292C4A800DE6DAE /* UIImage+Ex.swift */,
 				ED990D772292C4A800DE6DAE /* UIViewController+Ex.swift */,
 				ED990D7A2292C4A800DE6DAE /* UIWindow+Ex.swift */,
+				ED990DA8229559AD00DE6DAE /* Date+Ex.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -310,6 +328,7 @@
 			files = (
 				ED990D4F2292BB6C00DE6DAE /* LaunchScreen.storyboard in Resources */,
 				ED990D4C2292BB6C00DE6DAE /* Assets.xcassets in Resources */,
+				ED990D962293E5A400DE6DAE /* J_BaseView.xib in Resources */,
 				ED990D4A2292BB6A00DE6DAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED990D922292DE9300DE6DAE /* J_LunarFormatter.swift in Sources */,
+				ED990DA422952B6E00DE6DAE /* J_PlanModel.swift in Sources */,
 				ED990D652292C2E900DE6DAE /* J_HUD.swift in Sources */,
 				ED990D802292C4A800DE6DAE /* UIWindow+Ex.swift in Sources */,
 				ED990D7D2292C4A800DE6DAE /* UIViewController+Ex.swift in Sources */,
@@ -450,19 +470,23 @@
 				ED990D812292C4A800DE6DAE /* UIImage+Ex.swift in Sources */,
 				ED990D672292C30A00DE6DAE /* J_Alert.swift in Sources */,
 				ED990D7E2292C4A800DE6DAE /* String+Ex.swift in Sources */,
+				ED990DA9229559AD00DE6DAE /* Date+Ex.swift in Sources */,
 				ED990D6D2292C33E00DE6DAE /* J_NavMap.swift in Sources */,
 				ED990D6F2292C38000DE6DAE /* J_Enum.swift in Sources */,
 				ED990D472292BB6A00DE6DAE /* ViewController.swift in Sources */,
 				ED990D8E2292CAEA00DE6DAE /* J_CenterVC.swift in Sources */,
+				ED990DA222951B7500DE6DAE /* J_Picker.swift in Sources */,
 				ED990D622292C2BD00DE6DAE /* J_Client.swift in Sources */,
 				ED990D8A2292C7B800DE6DAE /* J_BaseVC.swift in Sources */,
 				ED990D692292C31700DE6DAE /* J_UI.swift in Sources */,
 				ED990D842292C79100DE6DAE /* J_BaseNavigationVC.swift in Sources */,
 				ED990D6B2292C32B00DE6DAE /* J_Define.swift in Sources */,
+				ED990D942293C7EF00DE6DAE /* J_CenterTableViewCell.swift in Sources */,
 				ED990D7C2292C4A800DE6DAE /* Number+Ex.swift in Sources */,
 				ED990D452292BB6A00DE6DAE /* AppDelegate.swift in Sources */,
 				ED990D592292BF0F00DE6DAE /* R.generated.swift in Sources */,
 				ED990D872292C79E00DE6DAE /* J_BaseTabBarVC.swift in Sources */,
+				ED990D982293E5BF00DE6DAE /* J_PickerView.swift in Sources */,
 				ED990D882292C79E00DE6DAE /* J_TabBar.swift in Sources */,
 				ED990D8C2292C7F500DE6DAE /* J_HomeVC.swift in Sources */,
 			);

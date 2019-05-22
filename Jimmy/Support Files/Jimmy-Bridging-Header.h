@@ -5,3 +5,4 @@
 #import <Foundation/Foundation.h>
 #import <CommonCrypto/CommonDigest.h>
 #import <RTRootNavigationController/RTRootNavigationController.h>
+#import <HXPhotoPicker/HXPhotoPicker.h>

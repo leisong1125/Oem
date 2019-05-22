@@ -114,6 +114,16 @@ extension String {
         return false
     }
     
+    func toDate(format: FormatStyle) -> Date {
+        
+        let dateFormatter = DateFormatter.init()
+        dateFormatter.dateFormat = format.rawValue
+        
+        let date = dateFormatter.date(from: self)
+        
+        return date!
+    }
+    
     /**
      只保留 字符串中的 数字
      

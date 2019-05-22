@@ -24,7 +24,7 @@ class NavigationMap: Navigator {
     static func initialize() {
         //  userLogin
         navigator.register(J_VCUrl.centerVC.rawValue) { (url, valus, content) -> UIViewController? in
-            let login = J_CenterVC()
+            let login = R.storyboard.main.j_CenterVC()!
 //            let loginNavi = BaseNavigationVC(rootViewController: login)
             return login
         }

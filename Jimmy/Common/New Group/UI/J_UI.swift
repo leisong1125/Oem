@@ -8,6 +8,40 @@
 
 import UIKit
 
+class J_App: NSObject {
+    
+    /// 当前 - 控制器
+    class func currentVC() -> UIViewController? {
+        
+        let rootVC = UIApplication.shared.delegate as? AppDelegate
+        return rootVC?.window?.currentVC
+    }
+    // 当前 - 根控制器
+    class func currentRootNav() -> UINavigationController {
+        
+        let nav_default = UINavigationController()
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        guard let tab = appDelegate?.window?.rootViewController as? UITabBarController else { return nav_default}
+        
+        let selindex = tab.selectedIndex
+        
+        guard let nav = tab.viewControllers?[selindex] as? UINavigationController else {
+            
+            return UIApplication.shared.keyWindow?.rootViewController as! UINavigationController
+        }
+        
+        return nav
+    }
+    
+    /// 窗口
+    class func window() -> UIWindow? {
+        let rootVC = UIApplication.shared.delegate as? AppDelegate
+        return rootVC?.window
+    }
+}
+
+
+
 struct J_UI{
     
     struct Screen {
@@ -31,7 +65,7 @@ struct J_UI{
         /// 主色调
         static let primary       =   UIColor.hexString(color: "#F96E50")
         /// 导航 主色调
-        static let nav_primary   =  UIColor.hexString(color: "#5C5757")
+        static let nav_primary   =  UIColor.hexString(color: "#F96E50")
         /// 按钮 不可点击
         static let btn_noSelect  =  UIColor.hexString(color: "#C5C5C5")
         /// 文本 提示占位 浅灰色
