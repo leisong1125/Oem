@@ -34,7 +34,7 @@ class J_BaseTabBarVC: UITabBarController {
     func initContent() {
                 
         let homeNav = J_BaseNavigationVC(rootViewController: R.storyboard.main.j_HomeVC()!)
-        let mineNav = J_BaseNavigationVC(rootViewController: J_MineVC())
+        let mineNav = J_BaseNavigationVC(rootViewController: R.storyboard.main.j_MineVC()!)
         
         let navList = [homeNav, mineNav]
         viewControllers = navList

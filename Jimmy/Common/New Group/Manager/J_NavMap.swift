@@ -12,22 +12,20 @@ import URLNavigator
 let navigator = NavigationMap()
 
 
-enum J_VCUrl: String {
-    
-    //登录
-    case centerVC = "jimmyPush://centerVC"
-}
+//enum J_VCUrl: String {
+//
+//}
 
 
 class NavigationMap: Navigator {
     
     static func initialize() {
-        //  userLogin
-        navigator.register(J_VCUrl.centerVC.rawValue) { (url, valus, content) -> UIViewController? in
-            let login = R.storyboard.main.j_CenterVC()!
-//            let loginNavi = BaseNavigationVC(rootViewController: login)
-            return login
-        }
+//        //  userLogin
+//        navigator.register(J_VCUrl.centerVC.rawValue) { (url, valus, content) -> UIViewController? in
+//            let login = R.storyboard.main.j_CenterVC()!
+////            let loginNavi = BaseNavigationVC(rootViewController: login)
+//            return login
+//        }
     }
     
     

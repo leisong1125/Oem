@@ -8,6 +8,24 @@
 
 import UIKit
 
-class J_Define: NSObject {
+struct J_Define {
+    
+    
+    
+    
+    
+    struct SDK {
+        struct Cloud {
+            static let AppID     = "0bnlbL91evENSr9emmmVX4dv-gzGzoHsz"
+            static let AppKey    = "vA29ANT68UbVkc4acGFIJnzf"
+        }
+        
+        struct JPush {
+            static let isProduction    = false // false 开发环境 true 生产环境
+            static let Channel         = "Publish channel"
+            static let AppKey          = "99333f8883799464220fae3f"
+        }
+    }
 
 }
+

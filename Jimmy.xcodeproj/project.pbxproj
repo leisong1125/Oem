@@ -40,6 +40,18 @@
 		ED990DA222951B7500DE6DAE /* J_Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DA122951B7500DE6DAE /* J_Picker.swift */; };
 		ED990DA422952B6E00DE6DAE /* J_PlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DA322952B6E00DE6DAE /* J_PlanModel.swift */; };
 		ED990DA9229559AD00DE6DAE /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DA8229559AD00DE6DAE /* Date+Ex.swift */; };
+		ED990DAB2296788F00DE6DAE /* J_DiaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DAA2296788F00DE6DAE /* J_DiaryVC.swift */; };
+		ED990DAD229678A400DE6DAE /* J_NoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DAC229678A400DE6DAE /* J_NoteVC.swift */; };
+		ED990DAF229678B700DE6DAE /* J_FeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DAE229678B700DE6DAE /* J_FeedbackVC.swift */; };
+		ED990DB1229678CA00DE6DAE /* J_AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DB0229678CA00DE6DAE /* J_AboutUsVC.swift */; };
+		ED990DB3229683C200DE6DAE /* J_NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DB2229683C200DE6DAE /* J_NoteModel.swift */; };
+		ED990DB52296934D00DE6DAE /* J_NoteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DB42296934D00DE6DAE /* J_NoteListVC.swift */; };
+		ED990DB722969B4A00DE6DAE /* J_DiaryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DB622969B4A00DE6DAE /* J_DiaryListVC.swift */; };
+		ED990DBA22977F2B00DE6DAE /* J_Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DB922977F2B00DE6DAE /* J_Check.swift */; };
+		ED990DBC229781C300DE6DAE /* J_LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DBB229781C300DE6DAE /* J_LaunchScreenVC.swift */; };
+		ED990DBF2297845200DE6DAE /* J_OModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DBE2297845200DE6DAE /* J_OModel.swift */; };
+		ED990DC322978ACF00DE6DAE /* J_WKWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DC222978ACF00DE6DAE /* J_WKWebViewVC.swift */; };
+		EDEC04142297C09F00B09D0A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEC04132297C09E00B09D0A /* AdSupport.framework */; };
 		F1B38F159838503E7C706BD0 /* Pods_Jimmy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC474726E4E4C56330B78B3 /* Pods_Jimmy.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +95,19 @@
 		ED990DA122951B7500DE6DAE /* J_Picker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = J_Picker.swift; sourceTree = "<group>"; };
 		ED990DA322952B6E00DE6DAE /* J_PlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_PlanModel.swift; sourceTree = "<group>"; };
 		ED990DA8229559AD00DE6DAE /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
+		ED990DAA2296788F00DE6DAE /* J_DiaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_DiaryVC.swift; sourceTree = "<group>"; };
+		ED990DAC229678A400DE6DAE /* J_NoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_NoteVC.swift; sourceTree = "<group>"; };
+		ED990DAE229678B700DE6DAE /* J_FeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_FeedbackVC.swift; sourceTree = "<group>"; };
+		ED990DB0229678CA00DE6DAE /* J_AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_AboutUsVC.swift; sourceTree = "<group>"; };
+		ED990DB2229683C200DE6DAE /* J_NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_NoteModel.swift; sourceTree = "<group>"; };
+		ED990DB42296934D00DE6DAE /* J_NoteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_NoteListVC.swift; sourceTree = "<group>"; };
+		ED990DB622969B4A00DE6DAE /* J_DiaryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_DiaryListVC.swift; sourceTree = "<group>"; };
+		ED990DB922977F2B00DE6DAE /* J_Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_Check.swift; sourceTree = "<group>"; };
+		ED990DBB229781C300DE6DAE /* J_LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_LaunchScreenVC.swift; sourceTree = "<group>"; };
+		ED990DBE2297845200DE6DAE /* J_OModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_OModel.swift; sourceTree = "<group>"; };
+		ED990DC222978ACF00DE6DAE /* J_WKWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_WKWebViewVC.swift; sourceTree = "<group>"; };
+		EDEC04122297BB1A00B09D0A /* Jimmy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jimmy.entitlements; sourceTree = "<group>"; };
+		EDEC04132297C09E00B09D0A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEC04142297C09F00B09D0A /* AdSupport.framework in Frameworks */,
 				F1B38F159838503E7C706BD0 /* Pods_Jimmy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +135,7 @@
 		4BB8FB1CE14C19CD357A833C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EDEC04132297C09E00B09D0A /* AdSupport.framework */,
 				DCC474726E4E4C56330B78B3 /* Pods_Jimmy.framework */,
 			);
 			name = Frameworks;
@@ -135,6 +162,7 @@
 		ED990D432292BB6A00DE6DAE /* Jimmy */ = {
 			isa = PBXGroup;
 			children = (
+				EDEC04122297BB1A00B09D0A /* Jimmy.entitlements */,
 				ED990D5F2292C1CC00DE6DAE /* Common */,
 				ED990D5E2292C1C500DE6DAE /* Class */,
 				ED990D562292BE1600DE6DAE /* Support Files */,
@@ -224,6 +252,13 @@
 			isa = PBXGroup;
 			children = (
 				ED990D8F2292CAF800DE6DAE /* J_MineVC.swift */,
+				ED990DB42296934D00DE6DAE /* J_NoteListVC.swift */,
+				ED990DB622969B4A00DE6DAE /* J_DiaryListVC.swift */,
+				ED990DAA2296788F00DE6DAE /* J_DiaryVC.swift */,
+				ED990DAC229678A400DE6DAE /* J_NoteVC.swift */,
+				ED990DAE229678B700DE6DAE /* J_FeedbackVC.swift */,
+				ED990DB0229678CA00DE6DAE /* J_AboutUsVC.swift */,
+				ED990DB2229683C200DE6DAE /* J_NoteModel.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -231,6 +266,7 @@
 		ED990D732292C48900DE6DAE /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				ED990DB822977F0300DE6DAE /* NetWork */,
 				ED990D632292C2D200DE6DAE /* UI */,
 				ED990D602292C26400DE6DAE /* Manager */,
 			);
@@ -255,12 +291,47 @@
 		ED990D822292C77C00DE6DAE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ED990DC122978AA400DE6DAE /* O */,
+				ED990DC022978A9600DE6DAE /* BaseVC */,
+				ED990DBD2297843D00DE6DAE /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		ED990DB822977F0300DE6DAE /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				ED990DB922977F2B00DE6DAE /* J_Check.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		ED990DBD2297843D00DE6DAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED990DBE2297845200DE6DAE /* J_OModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED990DC022978A9600DE6DAE /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
 				ED990D892292C7B800DE6DAE /* J_BaseVC.swift */,
 				ED990D832292C79100DE6DAE /* J_BaseNavigationVC.swift */,
 				ED990D852292C79D00DE6DAE /* J_BaseTabBarVC.swift */,
 				ED990D862292C79D00DE6DAE /* J_TabBar.swift */,
 			);
-			path = Common;
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		ED990DC122978AA400DE6DAE /* O */ = {
+			isa = PBXGroup;
+			children = (
+				ED990DBB229781C300DE6DAE /* J_LaunchScreenVC.swift */,
+				ED990DC222978ACF00DE6DAE /* J_WKWebViewVC.swift */,
+			);
+			path = O;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +371,14 @@
 					ED990D402292BB6A00DE6DAE = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -361,6 +440,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Jimmy/Pods-Jimmy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AVOSCloud/AVOSCloud.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
@@ -399,6 +479,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVOSCloud.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
@@ -461,16 +542,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED990D922292DE9300DE6DAE /* J_LunarFormatter.swift in Sources */,
+				ED990DB52296934D00DE6DAE /* J_NoteListVC.swift in Sources */,
 				ED990DA422952B6E00DE6DAE /* J_PlanModel.swift in Sources */,
 				ED990D652292C2E900DE6DAE /* J_HUD.swift in Sources */,
 				ED990D802292C4A800DE6DAE /* UIWindow+Ex.swift in Sources */,
 				ED990D7D2292C4A800DE6DAE /* UIViewController+Ex.swift in Sources */,
+				ED990DBC229781C300DE6DAE /* J_LaunchScreenVC.swift in Sources */,
 				ED990D902292CAF800DE6DAE /* J_MineVC.swift in Sources */,
 				ED990D7F2292C4A800DE6DAE /* UIColor+Ex.swift in Sources */,
 				ED990D812292C4A800DE6DAE /* UIImage+Ex.swift in Sources */,
 				ED990D672292C30A00DE6DAE /* J_Alert.swift in Sources */,
 				ED990D7E2292C4A800DE6DAE /* String+Ex.swift in Sources */,
 				ED990DA9229559AD00DE6DAE /* Date+Ex.swift in Sources */,
+				ED990DBF2297845200DE6DAE /* J_OModel.swift in Sources */,
 				ED990D6D2292C33E00DE6DAE /* J_NavMap.swift in Sources */,
 				ED990D6F2292C38000DE6DAE /* J_Enum.swift in Sources */,
 				ED990D472292BB6A00DE6DAE /* ViewController.swift in Sources */,
@@ -480,15 +564,23 @@
 				ED990D8A2292C7B800DE6DAE /* J_BaseVC.swift in Sources */,
 				ED990D692292C31700DE6DAE /* J_UI.swift in Sources */,
 				ED990D842292C79100DE6DAE /* J_BaseNavigationVC.swift in Sources */,
+				ED990DB722969B4A00DE6DAE /* J_DiaryListVC.swift in Sources */,
+				ED990DAF229678B700DE6DAE /* J_FeedbackVC.swift in Sources */,
 				ED990D6B2292C32B00DE6DAE /* J_Define.swift in Sources */,
 				ED990D942293C7EF00DE6DAE /* J_CenterTableViewCell.swift in Sources */,
+				ED990DAD229678A400DE6DAE /* J_NoteVC.swift in Sources */,
 				ED990D7C2292C4A800DE6DAE /* Number+Ex.swift in Sources */,
 				ED990D452292BB6A00DE6DAE /* AppDelegate.swift in Sources */,
 				ED990D592292BF0F00DE6DAE /* R.generated.swift in Sources */,
 				ED990D872292C79E00DE6DAE /* J_BaseTabBarVC.swift in Sources */,
+				ED990DB1229678CA00DE6DAE /* J_AboutUsVC.swift in Sources */,
+				ED990DBA22977F2B00DE6DAE /* J_Check.swift in Sources */,
 				ED990D982293E5BF00DE6DAE /* J_PickerView.swift in Sources */,
+				ED990DC322978ACF00DE6DAE /* J_WKWebViewVC.swift in Sources */,
+				ED990DB3229683C200DE6DAE /* J_NoteModel.swift in Sources */,
 				ED990D882292C79E00DE6DAE /* J_TabBar.swift in Sources */,
 				ED990D8C2292C7F500DE6DAE /* J_HomeVC.swift in Sources */,
+				ED990DAB2296788F00DE6DAE /* J_DiaryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,16 +728,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Jimmy/Jimmy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7W26525EVR;
+				DEVELOPMENT_TEAM = J7A3C8LY5H;
 				INFOPLIST_FILE = "$(SRCROOT)/Jimmy/Support Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.520.Jimmy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingchenghuihua.om;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Jimmy/Support Files/Jimmy-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -659,16 +754,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Jimmy/Jimmy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7W26525EVR;
+				DEVELOPMENT_TEAM = J7A3C8LY5H;
 				INFOPLIST_FILE = "$(SRCROOT)/Jimmy/Support Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.520.Jimmy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingchenghuihua.om;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Jimmy/Support Files/Jimmy-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

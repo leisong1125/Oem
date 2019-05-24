@@ -16,6 +16,8 @@ class J_HomeVC: J_BaseVC {
     @IBOutlet weak var calendar: FSCalendar!
     @IBOutlet weak var calendarHeightLayout: NSLayoutConstraint!
     
+    fileprivate var listM : [J_PlanModel] = []
+    
     fileprivate lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy年MM月dd"
@@ -32,16 +34,19 @@ class J_HomeVC: J_BaseVC {
     
     fileprivate let gregorian: NSCalendar! = NSCalendar(calendarIdentifier:NSCalendar.Identifier.chinese)
     
-//    fileprivate var lunarDay : Int = 0
-//    fileprivate var lunarChars : [String] = []
-    
     fileprivate var minimumDate : Date?
     fileprivate var maximumDate : Date?
     fileprivate var events     : [EKEvent] = []
     fileprivate var lunarFormatter     : J_LunarFormatter?
-    
-    
     fileprivate var cache : NSCache<AnyObject, AnyObject>?
+    
+    lazy var emptyLab: UILabel! = {
+        let lab = UILabel(frame: CGRect(x: 0, y: 30, width: J_UI.Screen.Width, height: 30))
+        lab.textAlignment = .center
+        lab.text = "还没有行程，赶快安排一下吧！"
+        return lab
+    }()
+    
     
     
     override func didReceiveMemoryWarning() {
@@ -55,6 +60,14 @@ class J_HomeVC: J_BaseVC {
         initChinese()
         initCalendar()
         
+        self.tableView.addSubview(emptyLab)
+        emptyLab.isHidden = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        handleData(date: calendar.selectedDate ?? Date())
     }
     
     func initCalendar() {
@@ -66,6 +79,8 @@ class J_HomeVC: J_BaseVC {
         self.calendar.appearance.headerDateFormat = "yyyy年MM月"
         // For UITest
         self.calendar.accessibilityIdentifier = "calendar"
+        
+        navigationItem.title = "行程"
     }
     
     func initChinese() {
@@ -101,7 +116,11 @@ class J_HomeVC: J_BaseVC {
         }
         
         let filteredEvents = (self.events as NSArray).filtered(using: NSPredicate(block: { (evaluatedObject, bindings) -> Bool in
-            return (evaluatedObject as? EKEvent)?.occurrenceDate == date
+            if #available(iOS 9.0, *) {
+                return (evaluatedObject as? EKEvent)?.occurrenceDate == date
+            } else {
+                return false
+            }
         }))
         
         if filteredEvents.count > 0{
@@ -138,6 +157,7 @@ extension J_HomeVC: FSCalendarDelegate, FSCalendarDataSource, UIGestureRecognize
         print("did select date \(self.dateFormatter.string(from: date))")
         let selectedDates = calendar.selectedDates.map({self.dateFormatter.string(from: $0)})
         print("selected dates is \(selectedDates)")
+        handleData(date: date)
         if monthPosition == .next || monthPosition == .previous {
             calendar.setCurrentPage(date, animated: true)
         }
@@ -157,16 +177,99 @@ extension J_HomeVC: FSCalendarDelegate, FSCalendarDataSource, UIGestureRecognize
     }
 }
 
+extension J_HomeVC{
+    
+    func initModel()-> J_PlanModel {
+        let model = J_PlanModel()
+        model.content = "来创建一个计划，规划一下行程吧！！！"
+        model.title  = "计划标题"
+        let image = UIImage.initWith(color: J_UI.Color.primary)
+        model.topImage = image.jpegData(compressionQuality: 1.0)
+        model.startTime = Date()
+        model.endTime = Date()
+        model.isPush = true
+        model.labelDate = Date().toString(format: .barYMd)
+        return model
+    }
+    
+    func handleData(date: Date) {
+        J_PlanReam.manger.getPlan(label: date.toString(format: .barYMd)) {[weak self] (list) in
+            
+            self?.listM = list
+            if date.toString(format: .barYMd) == Date().toString(format: .barYMd){
+                self?.listM.insert((self?.initModel())!, at: 0)
+            }
+            self?.tableView.reloadData()
+        }
+    }
+    
+}
+
+
+
 extension J_HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        emptyLab.isHidden = listM.count > 0
+        return listM.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.homeCell, for: indexPath)!
-        
-        cell.textLabel?.text = "测试数据"
-        
+        cell.updateValue(model: listM[indexPath.row])
         return cell
-    }    
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let delete = UITableViewRowAction(style: .default, title: "删除") {[weak self] (action, indexPath) in
+            debugPrint("删除")
+            J_PlanReam.manger.delePlan(model: self?.listM[indexPath.row])
+            self?.listM.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
+        
+        return [delete]
+    }
+    
+    
+    @available(iOS 11.0, *)
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let delete = UIContextualAction(style: .destructive, title: "删除") {[weak self] (action, view, completionHandler) in
+            J_PlanReam.manger.delePlan(model: self?.listM[indexPath.row])
+            self?.listM.remove(at: indexPath.row)
+            tableView.reloadData()
+            tableView.setEditing(false, animated: true)
+            completionHandler(true)
+        }
+        let actions = UISwipeActionsConfiguration(actions: [delete])
+        actions.performsFirstActionWithFullSwipe = false
+        
+        return actions
+    }
+}
+
+class J_HomeTableCell: UITableViewCell {
+    
+    @IBOutlet weak var imageV: UIImageView!
+    @IBOutlet weak var subTitleLab: UILabel!
+    
+    @IBOutlet weak var titleLab: UILabel!
+    @IBOutlet weak var dateLab: UILabel!
+    
+    
+    func updateValue(model: J_PlanModel)  {
+        
+        if model.topImage != nil {
+            imageV.image = UIImage(data: model.topImage!)
+        }
+        titleLab.text = model.title
+        subTitleLab.text = model.content
+        dateLab.text = model.startTime?.toString(format: .timeShort)
+    }
+    
 }

@@ -69,7 +69,8 @@ class J_TabBar: UITabBar {
     
     @objc func didClickPublishBtn() {
         // mark -
-        _ = NavigationMap.push(url: J_VCUrl.centerVC.rawValue)
+        let vc = R.storyboard.main.j_CenterVC()!
+        J_App.currentRootNav().pushViewController(vc, animated: true)
     }
     
     /*

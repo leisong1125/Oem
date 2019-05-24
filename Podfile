@@ -37,4 +37,6 @@ target 'Jimmy' do
 
     pod 'FSCalendar' , '2.8.0'
 
+    pod 'AVOSCloud' ,'11.6.2'
+    pod 'JPush', '3.2.0'
 end

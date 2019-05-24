@@ -6,3 +6,5 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <RTRootNavigationController/RTRootNavigationController.h>
 #import <HXPhotoPicker/HXPhotoPicker.h>
+#import <AVOSCloud/AVOSCloud.h>
+#import "JPUSHService.h"

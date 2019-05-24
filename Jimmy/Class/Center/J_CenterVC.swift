@@ -44,6 +44,9 @@ class J_CenterVC: J_BaseVC {
             J_HUD.show(text: "开始时间必须早于结束时间")
             return
         }
+        
+        J_PlanReam.manger.savePlan(model: planModel)
+        navigationController?.popViewController(animated: true)
     }
 
     

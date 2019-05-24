@@ -26,20 +26,34 @@ class J_Client: NSObject {
     }
     
     func handleSDK() {
-        NavigationMap.initialize()
-        
+        handleJpushSdk()
         IQKeyboardManager.shared().isEnabled = true
         IQKeyboardManager.shared().shouldResignOnTouchOutside = true
         IQKeyboardManager.shared().shouldShowToolbarPlaceholder = false
         IQKeyboardManager.shared().isEnableAutoToolbar = false
         IQKeyboardManager.shared().keyboardDistanceFromTextField = 80
+        
+        AVOSCloud.setApplicationId(J_Define.SDK.Cloud.AppID, clientKey: J_Define.SDK.Cloud.AppKey)
+        AVOSCloud.setAllLogsEnabled(true)
+    }
+    
+    func handleJpushSdk() {
+        
+   
+        
+        
     }
     
     
     func handleWindow() {
         let delegagte = UIApplication.shared.delegate as? AppDelegate
         delegagte?.window?.makeKeyAndVisible()
-        delegagte?.window?.rootViewController = J_BaseTabBarVC.shareInstance
+        delegagte?.window?.rootViewController = R.storyboard.main.j_LaunchScreenVC()!
     }
+    
+}
+
+extension J_Client{
+    
     
 }
