@@ -104,6 +104,30 @@ extension J_WKWebViewVC: WKUIDelegate, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         
+        guard let url = navigationAction.request.url else {
+            decisionHandler(WKNavigationActionPolicy.allow)
+            return
+        }
+        let app = UIApplication.shared
+        if url.absoluteString.contains("itunes.apple.com") {
+            if #available(iOS 10.0, *) {
+                app.open(url, options: [:], completionHandler: nil)
+            } else {
+                app.openURL(url)
+            }
+            decisionHandler(WKNavigationActionPolicy.allow)
+            return
+        }
+
+        if url.absoluteString.contains("itms-services://") {
+            if #available(iOS 10.0, *) {
+                app.open(url, options: [:], completionHandler: nil)
+            } else {
+                app.openURL(url)
+            }
+            decisionHandler(WKNavigationActionPolicy.allow)
+            return
+        }
         decisionHandler(WKNavigationActionPolicy.allow)
     }
     
@@ -123,6 +147,9 @@ extension J_WKWebViewVC: WKUIDelegate, WKNavigationDelegate {
             }
         }
     }
+    
+    
+    
     
     
 }

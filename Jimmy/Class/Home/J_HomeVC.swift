@@ -227,8 +227,13 @@ extension J_HomeVC: UITableViewDelegate, UITableViewDataSource {
         
         let delete = UITableViewRowAction(style: .default, title: "删除") {[weak self] (action, indexPath) in
             debugPrint("删除")
-            J_PlanReam.manger.delePlan(model: self?.listM[indexPath.row])
-            self?.listM.remove(at: indexPath.row)
+            let model = self?.listM[indexPath.row]
+            if !(model?.content == "来创建一个计划，规划一下行程吧！！！" && model?.title  == "计划标题") {
+                J_PlanReam.manger.delePlan(model: model)
+                self?.listM.remove(at: indexPath.row)
+            }else{
+                J_HUD.show(text: "默认不能删除")
+            }
             tableView.reloadData()
         }
         
@@ -240,8 +245,13 @@ extension J_HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let delete = UIContextualAction(style: .destructive, title: "删除") {[weak self] (action, view, completionHandler) in
-            J_PlanReam.manger.delePlan(model: self?.listM[indexPath.row])
-            self?.listM.remove(at: indexPath.row)
+            let model = self?.listM[indexPath.row]
+            if !(model?.content == "来创建一个计划，规划一下行程吧！！！" && model?.title  == "计划标题") {
+                J_PlanReam.manger.delePlan(model: model)
+                self?.listM.remove(at: indexPath.row)
+            }else{
+                J_HUD.show(text: "默认不能删除")
+            }
             tableView.reloadData()
             tableView.setEditing(false, animated: true)
             completionHandler(true)

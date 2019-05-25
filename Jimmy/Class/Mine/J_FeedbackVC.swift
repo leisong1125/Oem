@@ -7,24 +7,28 @@
 //
 
 import UIKit
+import IQKeyboardManager
 
 class J_FeedbackVC: J_BaseVC {
-
+    @IBOutlet weak var phoneTF: UITextField!
+    
+    @IBOutlet weak var textView: IQTextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+    }
+    @IBAction func submitAction(_ sender: Any) {
+        if phoneTF.text?.count ?? 0 <= 0 {
+            J_HUD.show(text: "联系方式不能为空")
+            return
+        }
+        
+        if textView.text.count <= 0 {
+            J_HUD.show(text: "内容不能为空")
+            return
+        }
+        J_HUD.show(text: "提交成功")
+        navigationController?.popViewController(animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -64,8 +64,12 @@ extension J_MineVC : UITableViewDataSource, UITableViewDelegate{
             navigationController?.pushViewController(listVC, animated: true)
             break
         case (1, 0):
+            let listVC = R.storyboard.main.j_FeedbackVC()!
+            navigationController?.pushViewController(listVC, animated: true)
             break
         case (1, 1):
+            let listVC = R.storyboard.main.j_AboutUsVC()!
+            navigationController?.pushViewController(listVC, animated: true)
             break
         default:
             break

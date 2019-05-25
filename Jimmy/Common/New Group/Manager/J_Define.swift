@@ -10,10 +10,6 @@ import UIKit
 
 struct J_Define {
     
-    
-    
-    
-    
     struct SDK {
         struct Cloud {
             static let AppID     = "0bnlbL91evENSr9emmmVX4dv-gzGzoHsz"
