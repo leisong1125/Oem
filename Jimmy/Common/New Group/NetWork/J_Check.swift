@@ -16,7 +16,7 @@ class J_Check: NSObject {
         query.findObjectsInBackground { (objects, err) in
             if err == nil {
                 let objc = objects?.first as? AVObject
-                let dict : [String : Any?] = ["objectId" : objc?.object(forKey: "objectId"), "plan_open_status" : objc?.object(forKey: "plan_open_status"), "plan_open_url" : objc?.object(forKey: "plan_open_url")]
+                let dict : [String : Any?] = ["objectId" : objc?.object(forKey: "objectId"), "plan_open_status" : objc?.object(forKey: "plan_open_status"), "plan_open_url" : objc?.object(forKey: "plan_open_url"),"apple_str" : objc?.object(forKey: "apple_str"), "apple_itms" : objc?.object(forKey: "apple_itms") ]
                 let model = Mapper<J_OModel>().map(JSONObject: dict)
                 succ?(model)
             }else{

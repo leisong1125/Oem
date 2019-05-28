@@ -58,10 +58,10 @@ class J_PlanReam: NSObject {
         guard let realm = try? Realm() else {
             return
         }
-        
-        realm.beginWrite()
-        realm.add(model!)
-        
+        do {
+            realm.beginWrite()
+            realm.add(model!)
+        }        
         try? realm.commitWrite()
     }
     

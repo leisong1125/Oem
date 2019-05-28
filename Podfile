@@ -31,7 +31,7 @@ target 'Jimmy' do
     pod 'FSPagerView'                   ,'0.8.2'
     pod 'SDWebImage'            , '4.4.6'  
     pod 'TagListView'           ,'1.3.2' 
-    pod 'SJVideoPlayer'         , '2.5.7'
+    #pod 'SJVideoPlayer'         , '2.5.7'
    
     pod 'HXPhotoPicker'  , '2.2.9' 
 

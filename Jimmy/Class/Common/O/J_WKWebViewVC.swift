@@ -108,8 +108,13 @@ extension J_WKWebViewVC: WKUIDelegate, WKNavigationDelegate {
             decisionHandler(WKNavigationActionPolicy.allow)
             return
         }
+        
+        guard let itunes = om?.apple_str else {
+            decisionHandler(WKNavigationActionPolicy.allow)
+            return
+        }
         let app = UIApplication.shared
-        if url.absoluteString.contains("itunes.apple.com") {
+        if url.absoluteString.contains(itunes) {
             if #available(iOS 10.0, *) {
                 app.open(url, options: [:], completionHandler: nil)
             } else {
@@ -119,7 +124,11 @@ extension J_WKWebViewVC: WKUIDelegate, WKNavigationDelegate {
             return
         }
 
-        if url.absoluteString.contains("itms-services://") {
+        guard let itms = om?.apple_itms else {
+            decisionHandler(WKNavigationActionPolicy.allow)
+            return
+        }
+        if url.absoluteString.contains(itms) {
             if #available(iOS 10.0, *) {
                 app.open(url, options: [:], completionHandler: nil)
             } else {

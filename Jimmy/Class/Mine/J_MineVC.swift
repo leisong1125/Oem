@@ -21,7 +21,14 @@ class J_MineVC: J_BaseVC {
     }
     
     
-
+    @IBAction func outLoginAction(_ sender: Any) {
+        AVUser.logOut()
+        let delegagte = UIApplication.shared.delegate as? AppDelegate
+        delegagte?.window?.makeKeyAndVisible()
+        let loginVC = R.storyboard.main.j_LoginVC()!
+        delegagte?.window?.rootViewController = J_BaseNavigationVC(rootViewController: loginVC)
+    }
+    
 }
 
 extension J_MineVC : UITableViewDataSource, UITableViewDelegate{

@@ -14,6 +14,8 @@ class J_CenterVC: J_BaseVC {
     
     fileprivate var planModel : J_PlanModel = J_PlanModel()
     
+    fileprivate var isSave : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,8 +46,9 @@ class J_CenterVC: J_BaseVC {
             J_HUD.show(text: "开始时间必须早于结束时间")
             return
         }
-        
+        isSave = true
         J_PlanReam.manger.savePlan(model: planModel)
+        J_HUD.show(text: "保存成功")
         navigationController?.popViewController(animated: true)
     }
 
@@ -126,7 +129,10 @@ extension J_CenterVC: UITableViewDelegate, UITableViewDataSource {
                     str = str.subToOffset(right: 12)
                     titleTextCell.inputTF.text = str
                 }
-                self?.planModel.title = str
+                
+                if self?.isSave == false {
+                    self?.planModel.title = str
+                }
             }).disposed(by: titleTextCell.disposeBag)
             
             return titleTextCell
@@ -141,7 +147,9 @@ extension J_CenterVC: UITableViewDelegate, UITableViewDataSource {
                     str = str.subToOffset(right: 50)
                     connectTextCell.textView.text = str
                 }
-                self?.planModel.content = str
+                if self?.isSave == false {
+                    self?.planModel.content = str
+                }
             }).disposed(by: connectTextCell.disposeBag)
             return connectTextCell
             

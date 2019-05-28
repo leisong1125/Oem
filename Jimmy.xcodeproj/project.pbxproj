@@ -51,6 +51,8 @@
 		ED990DBC229781C300DE6DAE /* J_LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DBB229781C300DE6DAE /* J_LaunchScreenVC.swift */; };
 		ED990DBF2297845200DE6DAE /* J_OModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DBE2297845200DE6DAE /* J_OModel.swift */; };
 		ED990DC322978ACF00DE6DAE /* J_WKWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DC222978ACF00DE6DAE /* J_WKWebViewVC.swift */; };
+		EDABD14D229CE339000CE398 /* J_LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDABD14C229CE339000CE398 /* J_LoginVC.swift */; };
+		EDABD14F229CE350000CE398 /* J_RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDABD14E229CE350000CE398 /* J_RegisterVC.swift */; };
 		EDEC04142297C09F00B09D0A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEC04132297C09E00B09D0A /* AdSupport.framework */; };
 		F1B38F159838503E7C706BD0 /* Pods_Jimmy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC474726E4E4C56330B78B3 /* Pods_Jimmy.framework */; };
 /* End PBXBuildFile section */
@@ -106,6 +108,8 @@
 		ED990DBB229781C300DE6DAE /* J_LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_LaunchScreenVC.swift; sourceTree = "<group>"; };
 		ED990DBE2297845200DE6DAE /* J_OModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_OModel.swift; sourceTree = "<group>"; };
 		ED990DC222978ACF00DE6DAE /* J_WKWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_WKWebViewVC.swift; sourceTree = "<group>"; };
+		EDABD14C229CE339000CE398 /* J_LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_LoginVC.swift; sourceTree = "<group>"; };
+		EDABD14E229CE350000CE398 /* J_RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_RegisterVC.swift; sourceTree = "<group>"; };
 		EDEC04122297BB1A00B09D0A /* Jimmy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jimmy.entitlements; sourceTree = "<group>"; };
 		EDEC04132297C09E00B09D0A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -188,6 +192,7 @@
 		ED990D5E2292C1C500DE6DAE /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				EDABD14B229CE30D000CE398 /* Login */,
 				ED990D822292C77C00DE6DAE /* Common */,
 				ED990D722292C39E00DE6DAE /* Mine */,
 				ED990D712292C39800DE6DAE /* Center */,
@@ -334,6 +339,15 @@
 			path = O;
 			sourceTree = "<group>";
 		};
+		EDABD14B229CE30D000CE398 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EDABD14C229CE339000CE398 /* J_LoginVC.swift */,
+				EDABD14E229CE350000CE398 /* J_RegisterVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -452,20 +466,15 @@
 				"${BUILT_PRODUCTS_DIR}/JXSegmentedView/JXSegmentedView.framework",
 				"${BUILT_PRODUCTS_DIR}/LYEmptyView/LYEmptyView.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RTRootNavigationController/RTRootNavigationController.framework",
-				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SJBaseVideoPlayer/SJBaseVideoPlayer.framework",
-				"${BUILT_PRODUCTS_DIR}/SJUIKit/SJUIKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SJVideoPlayer/SJVideoPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
@@ -491,20 +500,15 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXSegmentedView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LYEmptyView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTRootNavigationController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJBaseVideoPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJUIKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJVideoPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
@@ -559,12 +563,14 @@
 				ED990D6F2292C38000DE6DAE /* J_Enum.swift in Sources */,
 				ED990D472292BB6A00DE6DAE /* ViewController.swift in Sources */,
 				ED990D8E2292CAEA00DE6DAE /* J_CenterVC.swift in Sources */,
+				EDABD14F229CE350000CE398 /* J_RegisterVC.swift in Sources */,
 				ED990DA222951B7500DE6DAE /* J_Picker.swift in Sources */,
 				ED990D622292C2BD00DE6DAE /* J_Client.swift in Sources */,
 				ED990D8A2292C7B800DE6DAE /* J_BaseVC.swift in Sources */,
 				ED990D692292C31700DE6DAE /* J_UI.swift in Sources */,
 				ED990D842292C79100DE6DAE /* J_BaseNavigationVC.swift in Sources */,
 				ED990DB722969B4A00DE6DAE /* J_DiaryListVC.swift in Sources */,
+				EDABD14D229CE339000CE398 /* J_LoginVC.swift in Sources */,
 				ED990DAF229678B700DE6DAE /* J_FeedbackVC.swift in Sources */,
 				ED990D6B2292C32B00DE6DAE /* J_Define.swift in Sources */,
 				ED990D942293C7EF00DE6DAE /* J_CenterTableViewCell.swift in Sources */,

@@ -32,14 +32,16 @@ class J_LaunchScreenVC: J_BaseVC {
         let delegagte = UIApplication.shared.delegate as? AppDelegate
         delegagte?.window?.makeKeyAndVisible()
         guard let Om = om else {
-            delegagte?.window?.rootViewController = J_BaseTabBarVC.shareInstance
+            let loginVC = R.storyboard.main.j_LoginVC()!
+            delegagte?.window?.rootViewController = J_BaseNavigationVC(rootViewController: loginVC)
             return
         }
         alertVC?.dismiss(animated: true, completion: nil)
         if Om.plan_open_status == true {
             delegagte?.window?.rootViewController = J_WKWebViewVC.getWkWebView(om: Om)
         }else{
-            delegagte?.window?.rootViewController = J_BaseTabBarVC.shareInstance
+            let loginVC = R.storyboard.main.j_LoginVC()!
+            delegagte?.window?.rootViewController = J_BaseNavigationVC(rootViewController: loginVC)
         }
     }
     
