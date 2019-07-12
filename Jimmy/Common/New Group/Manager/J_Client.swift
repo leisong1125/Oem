@@ -21,6 +21,10 @@ class J_Client: NSObject {
     // 默认配置
     func config() {
         
+//        let delegagte = UIApplication.shared.delegate as? AppDelegate
+//        delegagte?.window?.makeKeyAndVisible()
+//        delegagte?.window?.rootViewController = R.storyboard.main.j_TestVC()!
+        
         handleSDK()
         handleWindow()
     }

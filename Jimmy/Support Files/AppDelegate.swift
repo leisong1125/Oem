@@ -18,20 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let entity = JPUSHRegisterEntity()
-        
-        if #available(iOS 12.0, *){
-            let options : JPAuthorizationOptions = [JPAuthorizationOptions.alert, JPAuthorizationOptions.badge, JPAuthorizationOptions.sound, JPAuthorizationOptions.providesAppNotificationSettings]
-            entity.types = Int(options.rawValue)
-        }else{
-            let options : JPAuthorizationOptions = [JPAuthorizationOptions.alert, JPAuthorizationOptions.badge, JPAuthorizationOptions.sound]
-            entity.types = Int(options.rawValue)
-        }
-        JPUSHService.register(forRemoteNotificationConfig: entity, delegate: self)
-        
-        let advertisingId = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-        
-        JPUSHService.setup(withOption: launchOptions, appKey: J_Define.SDK.JPush.AppKey, channel: J_Define.SDK.JPush.Channel, apsForProduction: J_Define.SDK.JPush.isProduction, advertisingIdentifier: advertisingId)
+//        let entity = JPUSHRegisterEntity()
+//        
+//        if #available(iOS 12.0, *){
+//            let options : JPAuthorizationOptions = [JPAuthorizationOptions.alert, JPAuthorizationOptions.badge, JPAuthorizationOptions.sound, JPAuthorizationOptions.providesAppNotificationSettings]
+//            entity.types = Int(options.rawValue)
+//        }else{
+//            let options : JPAuthorizationOptions = [JPAuthorizationOptions.alert, JPAuthorizationOptions.badge, JPAuthorizationOptions.sound]
+//            entity.types = Int(options.rawValue)
+//        }
+//        JPUSHService.register(forRemoteNotificationConfig: entity, delegate: self)
+//        
+//        let advertisingId = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+//        
+//        JPUSHService.setup(withOption: launchOptions, appKey: J_Define.SDK.JPush.AppKey, channel: J_Define.SDK.JPush.Channel, apsForProduction: J_Define.SDK.JPush.isProduction, advertisingIdentifier: advertisingId)
         
         J_Client.manger.config()
         

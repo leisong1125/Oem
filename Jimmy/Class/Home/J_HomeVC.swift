@@ -261,6 +261,13 @@ extension J_HomeVC: UITableViewDelegate, UITableViewDataSource {
         
         return actions
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let homeVC = EMNewHomeVC()
+        navigationController?.pushViewController(homeVC, animated: true)
+    }
+    
 }
 
 class J_HomeTableCell: UITableViewCell {

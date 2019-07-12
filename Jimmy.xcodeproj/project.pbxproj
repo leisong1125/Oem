@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED98CC5F22C5F36100B79BEC /* J_TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED98CC5E22C5F36100B79BEC /* J_TestVC.swift */; };
+		ED98CC6122C5FDDC00B79BEC /* J_RefreshTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED98CC6022C5FDDC00B79BEC /* J_RefreshTool.swift */; };
 		ED990D452292BB6A00DE6DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990D442292BB6A00DE6DAE /* AppDelegate.swift */; };
 		ED990D472292BB6A00DE6DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990D462292BB6A00DE6DAE /* ViewController.swift */; };
 		ED990D4A2292BB6A00DE6DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED990D482292BB6A00DE6DAE /* Main.storyboard */; };
@@ -53,6 +55,10 @@
 		ED990DC322978ACF00DE6DAE /* J_WKWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED990DC222978ACF00DE6DAE /* J_WKWebViewVC.swift */; };
 		EDABD14D229CE339000CE398 /* J_LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDABD14C229CE339000CE398 /* J_LoginVC.swift */; };
 		EDABD14F229CE350000CE398 /* J_RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDABD14E229CE350000CE398 /* J_RegisterVC.swift */; };
+		EDABD151229D3A03000CE398 /* EMNewHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDABD150229D3A03000CE398 /* EMNewHomeVC.swift */; };
+		EDABD154229D3C55000CE398 /* J_NewHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDABD153229D3C55000CE398 /* J_NewHomeCollectionViewCell.swift */; };
+		EDABD156229D3CA7000CE398 /* J_NewHomeHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDABD155229D3CA7000CE398 /* J_NewHomeHeaderReusableView.swift */; };
+		EDABD158229D3CBA000CE398 /* J_NewHomeFooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDABD157229D3CBA000CE398 /* J_NewHomeFooterReusableView.swift */; };
 		EDEC04142297C09F00B09D0A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEC04132297C09E00B09D0A /* AdSupport.framework */; };
 		F1B38F159838503E7C706BD0 /* Pods_Jimmy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC474726E4E4C56330B78B3 /* Pods_Jimmy.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +67,8 @@
 		69DCDC30EB792DB6006EF419 /* Pods-Jimmy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jimmy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jimmy/Pods-Jimmy.release.xcconfig"; sourceTree = "<group>"; };
 		DCC474726E4E4C56330B78B3 /* Pods_Jimmy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jimmy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DAF3BE221F9A4FBBDD2287 /* Pods-Jimmy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jimmy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jimmy/Pods-Jimmy.debug.xcconfig"; sourceTree = "<group>"; };
+		ED98CC5E22C5F36100B79BEC /* J_TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_TestVC.swift; sourceTree = "<group>"; };
+		ED98CC6022C5FDDC00B79BEC /* J_RefreshTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_RefreshTool.swift; sourceTree = "<group>"; };
 		ED990D412292BB6A00DE6DAE /* Jimmy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jimmy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED990D442292BB6A00DE6DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED990D462292BB6A00DE6DAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +118,10 @@
 		ED990DC222978ACF00DE6DAE /* J_WKWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_WKWebViewVC.swift; sourceTree = "<group>"; };
 		EDABD14C229CE339000CE398 /* J_LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_LoginVC.swift; sourceTree = "<group>"; };
 		EDABD14E229CE350000CE398 /* J_RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_RegisterVC.swift; sourceTree = "<group>"; };
+		EDABD150229D3A03000CE398 /* EMNewHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMNewHomeVC.swift; sourceTree = "<group>"; };
+		EDABD153229D3C55000CE398 /* J_NewHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_NewHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		EDABD155229D3CA7000CE398 /* J_NewHomeHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_NewHomeHeaderReusableView.swift; sourceTree = "<group>"; };
+		EDABD157229D3CBA000CE398 /* J_NewHomeFooterReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_NewHomeFooterReusableView.swift; sourceTree = "<group>"; };
 		EDEC04122297BB1A00B09D0A /* Jimmy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jimmy.entitlements; sourceTree = "<group>"; };
 		EDEC04132297C09E00B09D0A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -192,6 +204,7 @@
 		ED990D5E2292C1C500DE6DAE /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				EDABD152229D3BA6000CE398 /* CollectionView */,
 				EDABD14B229CE30D000CE398 /* Login */,
 				ED990D822292C77C00DE6DAE /* Common */,
 				ED990D722292C39E00DE6DAE /* Mine */,
@@ -346,6 +359,19 @@
 				EDABD14E229CE350000CE398 /* J_RegisterVC.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		EDABD152229D3BA6000CE398 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EDABD150229D3A03000CE398 /* EMNewHomeVC.swift */,
+				EDABD153229D3C55000CE398 /* J_NewHomeCollectionViewCell.swift */,
+				EDABD155229D3CA7000CE398 /* J_NewHomeHeaderReusableView.swift */,
+				EDABD157229D3CBA000CE398 /* J_NewHomeFooterReusableView.swift */,
+				ED98CC5E22C5F36100B79BEC /* J_TestVC.swift */,
+				ED98CC6022C5FDDC00B79BEC /* J_RefreshTool.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -549,10 +575,13 @@
 				ED990DB52296934D00DE6DAE /* J_NoteListVC.swift in Sources */,
 				ED990DA422952B6E00DE6DAE /* J_PlanModel.swift in Sources */,
 				ED990D652292C2E900DE6DAE /* J_HUD.swift in Sources */,
+				ED98CC6122C5FDDC00B79BEC /* J_RefreshTool.swift in Sources */,
 				ED990D802292C4A800DE6DAE /* UIWindow+Ex.swift in Sources */,
 				ED990D7D2292C4A800DE6DAE /* UIViewController+Ex.swift in Sources */,
 				ED990DBC229781C300DE6DAE /* J_LaunchScreenVC.swift in Sources */,
+				EDABD158229D3CBA000CE398 /* J_NewHomeFooterReusableView.swift in Sources */,
 				ED990D902292CAF800DE6DAE /* J_MineVC.swift in Sources */,
+				EDABD156229D3CA7000CE398 /* J_NewHomeHeaderReusableView.swift in Sources */,
 				ED990D7F2292C4A800DE6DAE /* UIColor+Ex.swift in Sources */,
 				ED990D812292C4A800DE6DAE /* UIImage+Ex.swift in Sources */,
 				ED990D672292C30A00DE6DAE /* J_Alert.swift in Sources */,
@@ -560,9 +589,11 @@
 				ED990DA9229559AD00DE6DAE /* Date+Ex.swift in Sources */,
 				ED990DBF2297845200DE6DAE /* J_OModel.swift in Sources */,
 				ED990D6D2292C33E00DE6DAE /* J_NavMap.swift in Sources */,
+				EDABD151229D3A03000CE398 /* EMNewHomeVC.swift in Sources */,
 				ED990D6F2292C38000DE6DAE /* J_Enum.swift in Sources */,
 				ED990D472292BB6A00DE6DAE /* ViewController.swift in Sources */,
 				ED990D8E2292CAEA00DE6DAE /* J_CenterVC.swift in Sources */,
+				ED98CC5F22C5F36100B79BEC /* J_TestVC.swift in Sources */,
 				EDABD14F229CE350000CE398 /* J_RegisterVC.swift in Sources */,
 				ED990DA222951B7500DE6DAE /* J_Picker.swift in Sources */,
 				ED990D622292C2BD00DE6DAE /* J_Client.swift in Sources */,
@@ -581,6 +612,7 @@
 				ED990D872292C79E00DE6DAE /* J_BaseTabBarVC.swift in Sources */,
 				ED990DB1229678CA00DE6DAE /* J_AboutUsVC.swift in Sources */,
 				ED990DBA22977F2B00DE6DAE /* J_Check.swift in Sources */,
+				EDABD154229D3C55000CE398 /* J_NewHomeCollectionViewCell.swift in Sources */,
 				ED990D982293E5BF00DE6DAE /* J_PickerView.swift in Sources */,
 				ED990DC322978ACF00DE6DAE /* J_WKWebViewVC.swift in Sources */,
 				ED990DB3229683C200DE6DAE /* J_NoteModel.swift in Sources */,
